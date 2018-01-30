@@ -1,0 +1,961 @@
+$black: #000;
+$white: #fff;
+$blue: #5da8ef;
+
+/*RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  vertical-align:baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+  display: block;
+}
+
+ul, ol {
+  list-style:none;
+}
+
+body{
+  padding: 9em 0 0 0;
+  font-size: 62.5%;
+  width:100%;
+  margin:0;
+  line-height:1;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav, .navbar, .header,.definition,.video,.surfboards,.training,.point,.club,.camp,.footer{
+  max-width:100%;
+}
+
+.definition,.video,.surfboards,.camp{
+  margin:0;
+}
+
+.navbar-left, .header h5, .definition h6, .video .left h6, .surfboards p, .surfboards h2, .surfboards .show, .surfboards .col-ms-4 .text h5, .training .col-sm-4 h2, .training .col-sm-4 h6, .point .right h2, .point .right h6, .club h2, .camp .right p, .camp .right h2, .footer a{
+  font-weight: 700;
+}
+
+/* ============= SCHEMA ===========
+  container
+      navbar
+
+      header
+
+      definition
+
+      video
+
+      surfboards
+
+      training
+
+      point
+
+      club
+
+      camp
+
+      footer
+ */
+
+.container{
+  padding:0;
+  min-width:100%;
+
+  .navbar{
+    width:100%;
+    padding: 2em 0;
+    background-color: $white;
+
+    .navbar-toggle, .navbar-toggle:active, .navbar-toggle:hover{
+      border-radius: 0;
+      background-color: $white;
+    }
+
+    .navbar-brand{
+      padding:0 0 0 4em;
+      img{
+        padding:0.3em 0 0 0;
+        height:80%;
+      }
+    }
+
+    .navbar-left{
+      text-transform: uppercase;
+      font-size:2em;
+      margin-left:9.5em;
+
+      a{
+        color: rgba(0, 0, 0, 0.92);
+      }
+
+      a:hover, a:active{
+        color: rgba(0, 0, 0, 0.52);
+      }
+    }
+  }/* NAV */
+
+  .header{
+    padding:0 0 0 10em;
+    margin:0;
+    height:80em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/main.png)no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 35em 0;
+
+    h5{
+      font-size: 3em;
+      color: $blue;
+    }
+
+    h1{
+      font-family: 'Playfair Display', serif;
+      font-size:9em;
+      margin:0;
+      padding: .3em 0;
+      font-weight:600;
+      color:#000;
+    }
+
+    p{
+      font-size:2.5em;
+      color: rgba(0, 0, 0, 0.55);
+    }
+  }/* HEADER */
+
+  .definition{
+    text-align: center;
+    padding: 5em 40em 2em 40em;
+
+    h3{
+      font-size:3.5em;
+      font-family: 'Playfair Display', serif;
+      color: rgba(0, 0, 0, 0.85);
+      padding:4em 0 1em 0;
+    }
+
+    h6{
+      font-size:2em;
+      color:$black;
+      padding-bottom: 2.2em;
+    }
+
+    .vertical-line{
+      width: 3px;
+      background-color: $blue;
+      height: 100%;
+      margin-left:50%;
+      margin-bottom: 6em;
+    }
+  }/* DEFINITION */
+
+  .video{
+    padding:0 15em;
+
+    .left{
+      padding:0;
+
+      img{
+        width: 100%;
+        height: 55em;
+      }
+
+      p{
+        padding:3em 5em 0 5em;
+        font-size:2.5em;
+        color: rgba(0, 0, 0, 0.55);
+      }
+
+      h6{
+        font-size:2em;
+        margin:2em 6.5em 0 6.5em;
+      }
+
+      h6:hover{
+        color: rgba(0, 0, 0, 0.52);
+        cursor: pointer;
+      }
+
+      .line{
+        width:11em;
+        height:4px;
+        background-color: $blue;
+        margin-left: 13em;
+      }
+    }
+
+    .right{
+      background: url(../images/img2.png)no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      margin-top:8em;
+      margin-left:-8em;
+      height:60em;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .playButton{
+        width:10em;
+        height:10em;
+        border-radius: 50%;
+        background-color: $blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .triangle{
+          width: 0;
+          height: 0;
+          border-top: 2em solid transparent;
+          border-bottom: 2em solid transparent;
+          border-left: 4em solid $white;
+          margin-left: .7em;
+        }
+      }
+
+      .playButton:hover{
+        cursor: pointer;
+      }
+    }
+
+    .right:hover{
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/img2.png)no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      margin-top:8em;
+      margin-left:-8em;
+      height:60em;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .playButton:hover{
+        -webkit-box-shadow: 0px 0px 21px 2px rgba(240,240,240,1);
+        -moz-box-shadow: 0px 0px 21px 2px rgba(240,240,240,1);
+        box-shadow: 0px 0px 21px 2px rgba(240,240,240,1);
+        transition: 0.3s;
+      }
+    }
+  }/* VIDEO */
+
+  .surfboards{
+    padding:15em 13em 10em 13em;
+    width:100%;
+
+    p{
+      text-align: center;
+      font-size: 3em;
+      color: $blue;
+    }
+
+    h2{
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      padding-bottom:1em;
+    }
+
+    .show{
+      text-align: center;
+      font-size:2em;
+    }
+
+    .show:hover{
+      color: rgba(0, 0, 0, 0.52);
+      cursor: pointer;
+    }
+
+    .show:hover{
+      color: rgba(0, 0, 0, 0.59);
+      cursor: pointer;
+    }
+
+    .line{
+      width:5%;
+      height:4px;
+      background-color: $blue;
+      margin-left: 47.5%;
+    }
+
+    .col-sm-4{
+      padding-bottom: 6em;
+
+      img{
+        float:left;
+        height:50em;
+      }
+
+      .text{
+        float:right;
+        position: absolute;
+        margin:10em 0 0 15em;
+
+        h6 {
+          color: rgba(0, 0, 0, 0.75);
+        }
+
+        h3{
+          font-family: 'Playfair Display', serif;
+          font-size: 4.5em;
+        }
+
+        h4{
+          padding: 1em 0 0 1em;
+          font-size:4em;
+          color: #5da8ef;
+        }
+
+        h5{
+          padding-left:2.5em;
+          font-size:2em;
+        }
+
+        h5:hover{
+          color: rgba(0, 0, 0, 0.52);
+          cursor: pointer;
+        }
+      }
+    }
+  }/* SURFBOARDS */
+
+  .training{
+    width: 100%;
+    margin:10em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10em;
+
+    .col-sm-4{
+      padding: 0 5em;
+
+      h2{
+        font-family: 'Playfair Display', serif;
+      }
+
+      .shortLine{
+        width:4em;
+        height:4px;
+        background-color: $blue;
+        margin-bottom:4em;
+      }
+
+      p{
+        font-size:2.5em;
+        color: rgba(0, 0, 0, 0.55);
+        padding-bottom:3em;
+      }
+
+      h6{
+        font-size:2em;
+      }
+
+      h6:hover{
+        color: rgba(0, 0, 0, 0.52);
+        cursor: pointer;
+      }
+
+      .line{
+        width:11em;
+        height:4px;
+        background-color: $blue;
+      }
+    }
+
+    .col-sm-8{
+      padding: 0;
+      height:70em;
+      background: url(../images/img3.png)no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+  }/* TRAINING */
+
+  .point{
+    margin:15em 30em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .left{
+      height:50vh;
+      background: url(../images/img4.png)no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    .right{
+      padding-left:10em;
+
+      h2{
+        font-family: 'Playfair Display', serif;
+      }
+
+      .shortLine{
+        width:4em;
+        height:4px;
+        background-color:$blue;
+        margin-bottom:4em;
+      }
+
+      p{
+        font-size:2.5em;
+        color: rgba(0, 0, 0, 0.55);
+        padding-bottom:3em;
+      }
+
+      h6{
+        font-size:2em;
+      }
+
+      h6:hover{
+        color: rgba(0, 0, 0, 0.52);
+        cursor: pointer;
+      }
+
+      .line{
+        width:11em;
+        height:4px;
+        background-color: $blue;
+      }
+    }
+  }/* POINT */
+
+  .club{
+    text-align: center;
+    margin:10em 40em 15em 40em;
+
+    .vertical-line{
+      width: 3px;
+      background-color: $blue;
+      height: 100%;
+      margin-left:50%;
+      margin-bottom: 6em;
+    }
+
+    h2{
+      font-family: 'Playfair Display', serif;
+      padding-bottom:0.9em;
+    }
+
+    p{
+      font-size:2.5em;
+      color: rgba(0, 0, 0, 0.55);
+      padding-bottom:3em;
+    }
+
+    .col-sm-11,.col-sm-1{
+      padding:0;
+    }
+
+    .col-sm-11{
+      input{
+        border-radius: 0;
+        background-color: rgba(212, 212, 212, 0.32);
+        height:2.5em;
+        width:100%;
+        border:none;
+      }
+
+      ::-webkit-input-placeholder{
+        font-weight:700;
+        color: #313131;
+        font-size:.7em;
+      }
+
+      :-moz-placeholder{
+        font-weight:700;
+        color: #313131;
+        font-size:.7em;
+      }
+
+      ::-moz-placeholder{
+        font-weight:700;
+        color: #313131;
+        font-size:.7em;
+      }
+
+      :-ms-input-placeholder{
+        font-weight:700;
+        color: #313131;
+        font-size:.7em;
+      }
+    }
+
+    .col-sm-1{
+      width:2.5em;
+
+      .btn-default{
+        border-radius: 0;
+        height:2.5em;
+        background-color: $blue;
+        color:$white;
+      }
+
+      .btn-default:hover{
+        opacity: 0.85;
+      }
+    }
+  }/* CLUB */
+
+  .camp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .left{
+      height:60em;
+      background: url(../images/img5.png)no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    .right{
+      padding-left: 5em;
+
+      p{
+        font-size:2em;
+        color: rgba(0, 0, 0, 0.55);
+      }
+
+      h2{
+        font-family: 'Playfair Display', serif;
+        padding: 1em 0 1em 1em;
+      }
+
+      h6{
+        font-size:2em;
+        color:$blue;
+      }
+
+      h6:hover{
+        color: rgba(93, 168, 239, 0.56);
+        cursor: pointer;
+      }
+
+      .line{
+        width:14em;
+        height:4px;
+        background-color: $blue;
+      }
+    }
+  }/* CAMP */
+
+  .footer{
+    padding:5em 0 3em 0;
+    margin-right:0;
+    border-top: 1px solid #e7e7e7;
+
+    .footerTop{
+      width:100%;
+
+      img{
+        margin-left:48.5%;
+      }
+    }
+
+    .footerNav{
+      text-align: center;
+      padding:5em 35em;
+
+      .col-sm-3{
+        text-transform: uppercase;
+
+        a{
+          font-size: .7em;
+          color: rgba(0, 0, 0, 0.92);
+        }
+
+        a:hover, a:active{
+          color: rgba(0, 0, 0, 0.52);
+          text-decoration: none;
+        }
+      }
+    }
+
+    .socialIcons{
+      text-align: center;
+
+      i{
+        font-size: 3em;
+        padding:1em;
+      }
+
+      a:hover{
+        cursor: pointer;
+        color: rgba(89, 89, 89, 0.55);
+      }
+
+      a{
+        color: rgba(162, 162, 162, 0.31);
+      }
+    }
+  }/* FOOTER */
+}/* CONTAINER */
+
+@media only screen and (max-width: 769px){
+  .container{
+
+    .navbar{
+      text-align: center;
+
+      .navbar-left{
+        margin: 0;
+      }
+    }
+
+    .header{
+      height:60em;
+
+      .left{
+        padding-right: 20em;
+
+        h5{
+          font-size: 2em;
+        }
+
+        h1{
+          font-size: 6em;
+        }
+
+        p{
+          font-size: 2.2em;
+        }
+      }
+    }/* HEADER */
+
+    .definition{
+      padding: 5em 20em 2em 20em;
+
+      h3{
+        padding-top:2em;
+      }
+    }/* DEFINITION */
+
+    .video{
+      padding:0 8em;
+
+      .left{
+        padding:0;
+
+        img{
+          height:40em;
+        }
+
+        p{
+          padding:3em 4em 0 2em;
+        }
+
+        h6{
+          margin-left: 0;
+          padding:2em 3.5em 0 2.5em;
+        }
+
+        .line{
+          margin-left: 5em;
+        }
+      }
+
+      .right{
+        img{
+          height:40em;
+        }
+      }
+    }/* VIDEO */
+
+    .surfboards{
+      padding:15em 7em 10em 7em;
+
+      .line{
+        display:none;
+      }
+
+      .col-xs-4{
+        padding:3em 2em;
+
+        img{
+          height:40em;
+        }
+
+        .text{
+          margin:8em 0 0 12em;
+
+          h6{
+            font-size:1.5em;
+          }
+
+          h3{
+            font-size:3.3em;
+          }
+
+          h4{
+            padding: 1em 0 0 0;
+            font-size: 2.5em;
+          }
+
+          h5{
+            padding-left:0;
+          }
+        }
+      }
+    }/* SURFBOARDS */
+
+    .training{
+      padding-left: 7em;
+
+      .col-sm-4{
+        h2{
+          font-size: 5em;
+        }
+
+        p{
+          font-size:2em;
+        }
+      }
+
+      .col-sm-8{
+        height:50em;
+      }
+    }/* TRAINING */
+
+    .point{
+      margin:15em 5em;
+
+      .right{
+        padding-left:5em;
+      }
+    }/* POINT */
+
+    .club{
+      margin:10em 10em 15em 10em;
+    }/* CLUB */
+
+    .camp{
+      .left{
+        height:50em;
+      }
+
+      .right{
+        padding-left: 4em;
+
+        h2{
+          font-size: 5em;
+          padding: 1em 0 1em .5em;
+        }
+
+        h6{
+          font-size:2em;
+          font-weight: 700;
+          color:$blue;
+        }
+
+        .line{
+          width:14em;
+          height:4px;
+          background-color: $blue;
+        }
+      }
+    }/* CAMP */
+
+    .footer{
+      width:100%;
+      padding:8em 0;
+
+      .footerNav{
+        padding: 5em 15em;
+      }
+
+      .footerTop{
+        display:none;
+      }
+    }/* FOOTER */
+  }
+}/* 769 px */
+
+@media only screen and (max-width: 500px) {
+  .container{
+    .header{
+      background-position: 0 0;
+      height:60em;
+      padding: 0 5em;
+
+      .left{
+        padding:0;
+      }
+
+      h5{
+        color: $black;
+      }
+    }/* HEADER */
+
+    .definition{
+      padding: 5em 5em 2em 5em;
+
+      h3{
+        padding-top: 1.5em;
+      }
+    }/* DEFINITION */
+
+    .video{
+      padding:0;
+
+      .left{
+        width:100%;
+
+        img{
+          height:50em;
+          width:100%;
+        }
+
+        p{
+          padding:3em 2em;
+        }
+
+        h6{
+          padding:0 0 0 2.5em;
+        }
+
+        .line{
+          margin-left: 5em;
+        }
+      }
+
+      .right{
+        display: none;
+      }
+    }/* VIDEO */
+
+    .surfboards{
+      padding:10em 0 0 0;
+
+      .line{
+        display:none;
+      }
+
+      .col-xs-4{
+        width:100%;
+        padding: 4em 7em 5em 7em;
+
+        img{
+          height:50em;
+        }
+
+        .text{
+          margin:8em 0 0 20em;
+
+          h6{
+            font-size:2em;
+          }
+
+          h3{
+            font-size:5em;
+          }
+
+          h4{
+            padding: 1em 0 0 0;
+            font-size: 2.5em;
+          }
+
+          h5{
+            padding-left:0;
+          }
+        }
+      }
+    }/* SURFBOARDS */
+
+    .training{
+      padding-left: 0;
+
+      .col-sm-4{
+        width:100%;
+
+        h2{
+          font-size: 6em;
+        }
+
+        p{
+          font-size:2em;
+        }
+      }
+
+      .col-sm-8{
+        display:none;
+      }
+    }/* TRAINING */
+
+    .point{
+      margin:15em 5em 5em 5em;
+
+      .left{
+        display: none;
+      }
+
+      .right{
+        width:100%;
+        padding:0;
+
+        p{
+          font-size:2em;
+        }
+      }
+    }/* POINT */
+
+    .club{
+      margin:0 5em 10em 5em;
+
+      p{
+        font-size: 2em;
+      }
+    }/* CLUB */
+
+    .camp{
+      .left{
+        display:none;
+      }
+
+      .right{
+        width:100%;
+        padding:0 8em;
+        margin-bottom: 7em;
+      }
+    }/* CAMP */
+
+    .footer{
+      padding:0 0 2em 0;
+
+      .footerNav{
+        padding: 5em 8em;
+      }
+
+      .footerTop{
+        display:none;
+      }
+
+      .socialIcons i{
+        padding:.5em;
+      }
+    }/* FOOTER */
+  }
+}/* 500 px */

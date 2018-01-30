@@ -1,0 +1,626 @@
+/*RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+  display: block; }
+
+ul, ol {
+  list-style: none; }
+
+body {
+  padding: 9em 0 0 0;
+  font-size: 62.5%;
+  width: 100%;
+  margin: 0;
+  line-height: 1;
+  font-family: 'Poppins', sans-serif; }
+
+nav, .navbar, .header, .definition, .video, .surfboards, .training, .point, .club, .camp, .footer {
+  max-width: 100%; }
+
+.definition, .video, .surfboards, .camp {
+  margin: 0; }
+
+.navbar-left, .header h5, .definition h6, .video .left h6, .surfboards p, .surfboards h2, .surfboards .show, .surfboards .col-ms-4 .text h5, .training .col-sm-4 h2, .training .col-sm-4 h6, .point .right h2, .point .right h6, .club h2, .camp .right p, .camp .right h2, .footer a {
+  font-weight: 700; }
+
+/* ============= SCHEMA ===========
+  container
+      navbar
+
+      header
+
+      definition
+
+      video
+
+      surfboards
+
+      training
+
+      point
+
+      club
+
+      camp
+
+      footer
+ */
+.container {
+  padding: 0;
+  min-width: 100%;
+  /* NAV */
+  /* HEADER */
+  /* DEFINITION */
+  /* VIDEO */
+  /* SURFBOARDS */
+  /* TRAINING */
+  /* POINT */
+  /* CLUB */
+  /* CAMP */
+  /* FOOTER */ }
+  .container .navbar {
+    width: 100%;
+    padding: 2em 0;
+    background-color: #fff; }
+    .container .navbar .navbar-toggle, .container .navbar .navbar-toggle:active, .container .navbar .navbar-toggle:hover {
+      border-radius: 0;
+      background-color: #fff; }
+    .container .navbar .navbar-brand {
+      padding: 0 0 0 4em; }
+      .container .navbar .navbar-brand img {
+        padding: 0.3em 0 0 0;
+        height: 80%; }
+    .container .navbar .navbar-left {
+      text-transform: uppercase;
+      font-size: 2em;
+      margin-left: 9.5em; }
+      .container .navbar .navbar-left a {
+        color: rgba(0, 0, 0, 0.92); }
+      .container .navbar .navbar-left a:hover, .container .navbar .navbar-left a:active {
+        color: rgba(0, 0, 0, 0.52); }
+  .container .header {
+    padding: 0 0 0 10em;
+    margin: 0;
+    height: 80em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/main.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 35em 0; }
+    .container .header h5 {
+      font-size: 3em;
+      color: #5da8ef; }
+    .container .header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 9em;
+      margin: 0;
+      padding: .3em 0;
+      font-weight: 600;
+      color: #000; }
+    .container .header p {
+      font-size: 2.5em;
+      color: rgba(0, 0, 0, 0.55); }
+  .container .definition {
+    text-align: center;
+    padding: 5em 40em 2em 40em; }
+    .container .definition h3 {
+      font-size: 3.5em;
+      font-family: 'Playfair Display', serif;
+      color: rgba(0, 0, 0, 0.85);
+      padding: 4em 0 1em 0; }
+    .container .definition h6 {
+      font-size: 2em;
+      color: #000;
+      padding-bottom: 2.2em; }
+    .container .definition .vertical-line {
+      width: 3px;
+      background-color: #5da8ef;
+      height: 100%;
+      margin-left: 50%;
+      margin-bottom: 6em; }
+  .container .video {
+    padding: 0 15em; }
+    .container .video .left {
+      padding: 0; }
+      .container .video .left img {
+        width: 100%;
+        height: 55em; }
+      .container .video .left p {
+        padding: 3em 5em 0 5em;
+        font-size: 2.5em;
+        color: rgba(0, 0, 0, 0.55); }
+      .container .video .left h6 {
+        font-size: 2em;
+        margin: 2em 6.5em 0 6.5em; }
+      .container .video .left h6:hover {
+        color: rgba(0, 0, 0, 0.52);
+        cursor: pointer; }
+      .container .video .left .line {
+        width: 11em;
+        height: 4px;
+        background-color: #5da8ef;
+        margin-left: 13em; }
+    .container .video .right {
+      background: url(../images/img2.png) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      margin-top: 8em;
+      margin-left: -8em;
+      height: 60em;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .container .video .right .playButton {
+        width: 10em;
+        height: 10em;
+        border-radius: 50%;
+        background-color: #5da8ef;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .container .video .right .playButton .triangle {
+          width: 0;
+          height: 0;
+          border-top: 2em solid transparent;
+          border-bottom: 2em solid transparent;
+          border-left: 4em solid #fff;
+          margin-left: .7em; }
+      .container .video .right .playButton:hover {
+        cursor: pointer; }
+    .container .video .right:hover {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/img2.png) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      margin-top: 8em;
+      margin-left: -8em;
+      height: 60em;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .container .video .right:hover .playButton:hover {
+        -webkit-box-shadow: 0px 0px 21px 2px #f0f0f0;
+        -moz-box-shadow: 0px 0px 21px 2px #f0f0f0;
+        box-shadow: 0px 0px 21px 2px #f0f0f0;
+        transition: 0.3s; }
+  .container .surfboards {
+    padding: 15em 13em 10em 13em;
+    width: 100%; }
+    .container .surfboards p {
+      text-align: center;
+      font-size: 3em;
+      color: #5da8ef; }
+    .container .surfboards h2 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      padding-bottom: 1em; }
+    .container .surfboards .show {
+      text-align: center;
+      font-size: 2em; }
+    .container .surfboards .show:hover {
+      color: rgba(0, 0, 0, 0.52);
+      cursor: pointer; }
+    .container .surfboards .show:hover {
+      color: rgba(0, 0, 0, 0.59);
+      cursor: pointer; }
+    .container .surfboards .line {
+      width: 5%;
+      height: 4px;
+      background-color: #5da8ef;
+      margin-left: 47.5%; }
+    .container .surfboards .col-sm-4 {
+      padding-bottom: 6em; }
+      .container .surfboards .col-sm-4 img {
+        float: left;
+        height: 50em; }
+      .container .surfboards .col-sm-4 .text {
+        float: right;
+        position: absolute;
+        margin: 10em 0 0 15em; }
+        .container .surfboards .col-sm-4 .text h6 {
+          color: rgba(0, 0, 0, 0.75); }
+        .container .surfboards .col-sm-4 .text h3 {
+          font-family: 'Playfair Display', serif;
+          font-size: 4.5em; }
+        .container .surfboards .col-sm-4 .text h4 {
+          padding: 1em 0 0 1em;
+          font-size: 4em;
+          color: #5da8ef; }
+        .container .surfboards .col-sm-4 .text h5 {
+          padding-left: 2.5em;
+          font-size: 2em; }
+        .container .surfboards .col-sm-4 .text h5:hover {
+          color: rgba(0, 0, 0, 0.52);
+          cursor: pointer; }
+  .container .training {
+    width: 100%;
+    margin: 10em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10em; }
+    .container .training .col-sm-4 {
+      padding: 0 5em; }
+      .container .training .col-sm-4 h2 {
+        font-family: 'Playfair Display', serif; }
+      .container .training .col-sm-4 .shortLine {
+        width: 4em;
+        height: 4px;
+        background-color: #5da8ef;
+        margin-bottom: 4em; }
+      .container .training .col-sm-4 p {
+        font-size: 2.5em;
+        color: rgba(0, 0, 0, 0.55);
+        padding-bottom: 3em; }
+      .container .training .col-sm-4 h6 {
+        font-size: 2em; }
+      .container .training .col-sm-4 h6:hover {
+        color: rgba(0, 0, 0, 0.52);
+        cursor: pointer; }
+      .container .training .col-sm-4 .line {
+        width: 11em;
+        height: 4px;
+        background-color: #5da8ef; }
+    .container .training .col-sm-8 {
+      padding: 0;
+      height: 70em;
+      background: url(../images/img3.png) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+  .container .point {
+    margin: 15em 30em;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .container .point .left {
+      height: 50vh;
+      background: url(../images/img4.png) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+    .container .point .right {
+      padding-left: 10em; }
+      .container .point .right h2 {
+        font-family: 'Playfair Display', serif; }
+      .container .point .right .shortLine {
+        width: 4em;
+        height: 4px;
+        background-color: #5da8ef;
+        margin-bottom: 4em; }
+      .container .point .right p {
+        font-size: 2.5em;
+        color: rgba(0, 0, 0, 0.55);
+        padding-bottom: 3em; }
+      .container .point .right h6 {
+        font-size: 2em; }
+      .container .point .right h6:hover {
+        color: rgba(0, 0, 0, 0.52);
+        cursor: pointer; }
+      .container .point .right .line {
+        width: 11em;
+        height: 4px;
+        background-color: #5da8ef; }
+  .container .club {
+    text-align: center;
+    margin: 10em 40em 15em 40em; }
+    .container .club .vertical-line {
+      width: 3px;
+      background-color: #5da8ef;
+      height: 100%;
+      margin-left: 50%;
+      margin-bottom: 6em; }
+    .container .club h2 {
+      font-family: 'Playfair Display', serif;
+      padding-bottom: 0.9em; }
+    .container .club p {
+      font-size: 2.5em;
+      color: rgba(0, 0, 0, 0.55);
+      padding-bottom: 3em; }
+    .container .club .col-sm-11, .container .club .col-sm-1 {
+      padding: 0; }
+    .container .club .col-sm-11 input {
+      border-radius: 0;
+      background-color: rgba(212, 212, 212, 0.32);
+      height: 2.5em;
+      width: 100%;
+      border: none; }
+    .container .club .col-sm-11 ::-webkit-input-placeholder {
+      font-weight: 700;
+      color: #313131;
+      font-size: .7em; }
+    .container .club .col-sm-11 :-moz-placeholder {
+      font-weight: 700;
+      color: #313131;
+      font-size: .7em; }
+    .container .club .col-sm-11 ::-moz-placeholder {
+      font-weight: 700;
+      color: #313131;
+      font-size: .7em; }
+    .container .club .col-sm-11 :-ms-input-placeholder {
+      font-weight: 700;
+      color: #313131;
+      font-size: .7em; }
+    .container .club .col-sm-1 {
+      width: 2.5em; }
+      .container .club .col-sm-1 .btn-default {
+        border-radius: 0;
+        height: 2.5em;
+        background-color: #5da8ef;
+        color: #fff; }
+      .container .club .col-sm-1 .btn-default:hover {
+        opacity: 0.85; }
+  .container .camp {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .container .camp .left {
+      height: 60em;
+      background: url(../images/img5.png) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+    .container .camp .right {
+      padding-left: 5em; }
+      .container .camp .right p {
+        font-size: 2em;
+        color: rgba(0, 0, 0, 0.55); }
+      .container .camp .right h2 {
+        font-family: 'Playfair Display', serif;
+        padding: 1em 0 1em 1em; }
+      .container .camp .right h6 {
+        font-size: 2em;
+        color: #5da8ef; }
+      .container .camp .right h6:hover {
+        color: rgba(93, 168, 239, 0.56);
+        cursor: pointer; }
+      .container .camp .right .line {
+        width: 14em;
+        height: 4px;
+        background-color: #5da8ef; }
+  .container .footer {
+    padding: 5em 0 3em 0;
+    margin-right: 0;
+    border-top: 1px solid #e7e7e7; }
+    .container .footer .footerTop {
+      width: 100%; }
+      .container .footer .footerTop img {
+        margin-left: 48.5%; }
+    .container .footer .footerNav {
+      text-align: center;
+      padding: 5em 35em; }
+      .container .footer .footerNav .col-sm-3 {
+        text-transform: uppercase; }
+        .container .footer .footerNav .col-sm-3 a {
+          font-size: .7em;
+          color: rgba(0, 0, 0, 0.92); }
+        .container .footer .footerNav .col-sm-3 a:hover, .container .footer .footerNav .col-sm-3 a:active {
+          color: rgba(0, 0, 0, 0.52);
+          text-decoration: none; }
+    .container .footer .socialIcons {
+      text-align: center; }
+      .container .footer .socialIcons i {
+        font-size: 3em;
+        padding: 1em; }
+      .container .footer .socialIcons a:hover {
+        cursor: pointer;
+        color: rgba(89, 89, 89, 0.55); }
+      .container .footer .socialIcons a {
+        color: rgba(162, 162, 162, 0.31); }
+
+/* CONTAINER */
+@media only screen and (max-width: 769px) {
+  .container {
+    /* HEADER */
+    /* DEFINITION */
+    /* VIDEO */
+    /* SURFBOARDS */
+    /* TRAINING */
+    /* POINT */
+    /* CLUB */
+    /* CAMP */
+    /* FOOTER */ }
+    .container .navbar {
+      text-align: center; }
+      .container .navbar .navbar-left {
+        margin: 0; }
+    .container .header {
+      height: 60em; }
+      .container .header .left {
+        padding-right: 20em; }
+        .container .header .left h5 {
+          font-size: 2em; }
+        .container .header .left h1 {
+          font-size: 6em; }
+        .container .header .left p {
+          font-size: 2.2em; }
+    .container .definition {
+      padding: 5em 20em 2em 20em; }
+      .container .definition h3 {
+        padding-top: 2em; }
+    .container .video {
+      padding: 0 8em; }
+      .container .video .left {
+        padding: 0; }
+        .container .video .left img {
+          height: 40em; }
+        .container .video .left p {
+          padding: 3em 4em 0 2em; }
+        .container .video .left h6 {
+          margin-left: 0;
+          padding: 2em 3.5em 0 2.5em; }
+        .container .video .left .line {
+          margin-left: 5em; }
+      .container .video .right img {
+        height: 40em; }
+    .container .surfboards {
+      padding: 15em 7em 10em 7em; }
+      .container .surfboards .line {
+        display: none; }
+      .container .surfboards .col-xs-4 {
+        padding: 3em 2em; }
+        .container .surfboards .col-xs-4 img {
+          height: 40em; }
+        .container .surfboards .col-xs-4 .text {
+          margin: 8em 0 0 12em; }
+          .container .surfboards .col-xs-4 .text h6 {
+            font-size: 1.5em; }
+          .container .surfboards .col-xs-4 .text h3 {
+            font-size: 3.3em; }
+          .container .surfboards .col-xs-4 .text h4 {
+            padding: 1em 0 0 0;
+            font-size: 2.5em; }
+          .container .surfboards .col-xs-4 .text h5 {
+            padding-left: 0; }
+    .container .training {
+      padding-left: 7em; }
+      .container .training .col-sm-4 h2 {
+        font-size: 5em; }
+      .container .training .col-sm-4 p {
+        font-size: 2em; }
+      .container .training .col-sm-8 {
+        height: 50em; }
+    .container .point {
+      margin: 15em 5em; }
+      .container .point .right {
+        padding-left: 5em; }
+    .container .club {
+      margin: 10em 10em 15em 10em; }
+    .container .camp .left {
+      height: 50em; }
+    .container .camp .right {
+      padding-left: 4em; }
+      .container .camp .right h2 {
+        font-size: 5em;
+        padding: 1em 0 1em .5em; }
+      .container .camp .right h6 {
+        font-size: 2em;
+        font-weight: 700;
+        color: #5da8ef; }
+      .container .camp .right .line {
+        width: 14em;
+        height: 4px;
+        background-color: #5da8ef; }
+    .container .footer {
+      width: 100%;
+      padding: 8em 0; }
+      .container .footer .footerNav {
+        padding: 5em 15em; }
+      .container .footer .footerTop {
+        display: none; } }
+/* 769 px */
+@media only screen and (max-width: 500px) {
+  .container {
+    /* HEADER */
+    /* DEFINITION */
+    /* VIDEO */
+    /* SURFBOARDS */
+    /* TRAINING */
+    /* POINT */
+    /* CLUB */
+    /* CAMP */
+    /* FOOTER */ }
+    .container .header {
+      background-position: 0 0;
+      height: 60em;
+      padding: 0 5em; }
+      .container .header .left {
+        padding: 0; }
+      .container .header h5 {
+        color: #000; }
+    .container .definition {
+      padding: 5em 5em 2em 5em; }
+      .container .definition h3 {
+        padding-top: 1.5em; }
+    .container .video {
+      padding: 0; }
+      .container .video .left {
+        width: 100%; }
+        .container .video .left img {
+          height: 50em;
+          width: 100%; }
+        .container .video .left p {
+          padding: 3em 2em; }
+        .container .video .left h6 {
+          padding: 0 0 0 2.5em; }
+        .container .video .left .line {
+          margin-left: 5em; }
+      .container .video .right {
+        display: none; }
+    .container .surfboards {
+      padding: 10em 0 0 0; }
+      .container .surfboards .line {
+        display: none; }
+      .container .surfboards .col-xs-4 {
+        width: 100%;
+        padding: 4em 7em 5em 7em; }
+        .container .surfboards .col-xs-4 img {
+          height: 50em; }
+        .container .surfboards .col-xs-4 .text {
+          margin: 8em 0 0 20em; }
+          .container .surfboards .col-xs-4 .text h6 {
+            font-size: 2em; }
+          .container .surfboards .col-xs-4 .text h3 {
+            font-size: 5em; }
+          .container .surfboards .col-xs-4 .text h4 {
+            padding: 1em 0 0 0;
+            font-size: 2.5em; }
+          .container .surfboards .col-xs-4 .text h5 {
+            padding-left: 0; }
+    .container .training {
+      padding-left: 0; }
+      .container .training .col-sm-4 {
+        width: 100%; }
+        .container .training .col-sm-4 h2 {
+          font-size: 6em; }
+        .container .training .col-sm-4 p {
+          font-size: 2em; }
+      .container .training .col-sm-8 {
+        display: none; }
+    .container .point {
+      margin: 15em 5em 5em 5em; }
+      .container .point .left {
+        display: none; }
+      .container .point .right {
+        width: 100%;
+        padding: 0; }
+        .container .point .right p {
+          font-size: 2em; }
+    .container .club {
+      margin: 0 5em 10em 5em; }
+      .container .club p {
+        font-size: 2em; }
+    .container .camp .left {
+      display: none; }
+    .container .camp .right {
+      width: 100%;
+      padding: 0 8em;
+      margin-bottom: 7em; }
+    .container .footer {
+      padding: 0 0 2em 0; }
+      .container .footer .footerNav {
+        padding: 5em 8em; }
+      .container .footer .footerTop {
+        display: none; }
+      .container .footer .socialIcons i {
+        padding: .5em; } }
+/* 500 px */
+
+/*# sourceMappingURL=style.css.map */
