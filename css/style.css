@@ -86,16 +86,17 @@ nav, .navbar, .header, .definition, .video, .surfboards, .training, .point, .clu
   .container .header {
     padding: 0 0 0 10em;
     margin: 0;
-    height: 80em;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background: url(../images/main.png) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: 35em 0; }
+    -webkit-background-size: 80%;
+    -moz-background-size: 80%;
+    -o-background-size: 80%;
+    background-size: 80%;
+    background-position-x: 100%;
+    background-position-y: 0; }
     .container .header h5 {
       font-size: 3em;
       color: #5da8ef; }
@@ -442,7 +443,10 @@ nav, .navbar, .header, .definition, .video, .surfboards, .training, .point, .clu
       .container .navbar .navbar-left {
         margin: 0; }
     .container .header {
-      height: 60em; }
+      height: 60em;
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(../images/main.png) no-repeat center center;
+    }
+
       .container .header .left {
         padding-right: 20em; }
         .container .header .left h5 {
@@ -540,6 +544,7 @@ nav, .navbar, .header, .definition, .video, .surfboards, .training, .point, .clu
     .container .header {
       background-position: 0 0;
       height: 60em;
+      background-size: 100%;
       padding: 0 5em; }
       .container .header .left {
         padding: 0; }
